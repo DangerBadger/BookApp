@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Simple book app",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "start": "live-server",
-    "build": "rollup",
+    "build": "rollup -c --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,9 +24,11 @@
   "homepage": "https://github.com/DangerBadger/BookApp#readme",
   "devDependencies": {
     "@eslint/js": "^9.34.0",
+    "@rollup/plugin-node-resolve": "^16.0.1",
     "eslint": "^9.34.0",
     "globals": "^16.3.0",
     "live-server": "^1.2.2",
-    "rollup": "^4.50.0"
+    "rollup": "^4.50.0",
+    "rollup-plugin-import-css": "^4.0.2"
   }
 }
